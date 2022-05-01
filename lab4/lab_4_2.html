@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+		<title>Оформление вертикального меню</title>
+		</head>
+		<style>
+			
+			html {
+					background: #f0f0f0;
+			}
+			
+			.menu {
+					width: 200px;
+					background: #fff;
+			}
+			
+			.menu li ul {
+					display: none;
+					position: relative;
+					top: 0;
+					width: 150px;
+			}
+			
+			li:hover ul {
+				display: block;	
+			}
+			
+			.iconsminus, .iconsplus, .iconspoint {
+				display: inline-block; background: url(pic/icons.gif) no-repeat; overflow: hidden; text-indent: -9999px; text-align: left;
+				}
+			 
+			.iconsminus { 
+			background-position: -0px -0px; width: 16px; height: 16px; 
+			}
+			.iconspoint { 
+			background-position: -0px -16px; width: 16px; height: 16px;
+			}
+			.iconsplus {
+			background-position: -0px -32px; width: 16px; height: 16px;
+			}
+			
+	</style>
+<body>
+	<nav class="menu">
+		<ul class="fa-ul">
+			<li><i class="fa-li fa fa-film"></i>
+				<div class="iconsminus"></div><a class="ss" href="#">Фильмы</a>
+				<ul class="fa-ul">
+					<li><i class="fa-li fa fa-film"></i>
+				<div class="iconspoint"></div><a href="#">Экшн</a></li>
+					<li><i class="fa-li fa fa-film"></i>
+				<div class="iconspoint"></div><a href="#">Мелодрамы</a></li>
+					<li><i class="fa-li fa fa-film"></i>
+				<div class="iconspoint"></div><a href="#">Сериалы</a></li>
+					<li><i class="fa-li fa fa-film"></i>
+				<div class="iconspoint"></div><a href="#">Семейные</a></li>
+				</ul>
+			</li>
+			<li><i class="fa-li fa fa-music"></i>
+				<div class="iconsminus"> </div> <a href="#">Музыка</a>
+				<ul class="fa-ul">
+					<li><i class="fa-li fa fa-music"></i>
+				<div class="iconspoint"></div><a href="#">Классика</a></li>
+					<li><i class="fa-li fa fa-music"></i>
+				<div class="iconspoint"></div><a href="#">Джаз</a></li>
+					<li><i class="fa-li fa fa-music"></i>
+				<div class="iconspoint"></div><a href="#">Рок</a></li>
+					<li><i class="fa-li fa fa-music"></i>
+				<div class="iconspoint"></div><a href="#">Грандж</a></li>
+				</ul>
+			</li>
+			<li><i class="fa-li fa fa-laptop"></i>
+				<div class="iconsminus"></div><a href="#">Софт</a>
+				<ul class="fa-ul">
+					<li><i class="fa-li fa fa-paint-brush"></i>
+				<div class="iconspoint"></div><a href="#">Графика</a></li>
+					<li><i class="fa-li fa fa-laptop"></i>
+				<div class="iconspoint"></div><a href="#">3D-моделирование</a></li>
+					<li><i class="fa-li fa fa-laptop"></i>
+				<div class="iconspoint"></div><a href="#">Машинопись</a></li>
+					<li><i class="fa-li fa fa-language"></i>
+				<div class="iconspoint"></div><a href="#">Переводчики</a></li>
+				</ul>
+			</li>
+			<li><i class="fa-li fa fa-gamepad"></i>
+				<div class="iconsminus"></div><a href="#">Игры</a>
+				<ul class="fa-ul">
+					<li><i class="fa-li fa fa-gamepad"></i>
+				<div class="iconspoint"></div><a href="#">РПГ</a></li>
+					<li><i class="fa-li fa fa-gamepad"></i>
+				<div class="iconspoint"></div><a href="#">Шутеры</a></li>
+					<li><i class="fa-li fa fa-gamepad"></i>
+				<div class="iconspoint"></div><a href="#">Пасьянсы</a></li>
+				</ul>
+			</li>
+		</ul>
+	</nav>
+</body>
+</html>

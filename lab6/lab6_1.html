@@ -1,0 +1,105 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Главная страница</title>
+<link type="text/css" rel="stylesheet" href="css/main.css">
+<style>
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+    
+}
+
+#container {
+    width: 70%;
+    margin: auto auto;
+   
+}
+
+#header {
+    background: #b0c4de;
+    width: 99%;
+    height: 55px;
+    padding:5px;
+    margin-right:10px;
+}
+
+#left {
+    background: url(pic/left.png);
+    float:left;
+    width:200px;
+    height:250px;
+    padding:5px;
+    margin-top:10px;
+}
+
+#right {
+    background: url(pic/right.png);
+    float:right;
+    width:200px;
+    height:250px;
+    padding:5px;
+    margin-top:10px;
+}
+
+#footer {
+    background: #c9a0dc;
+    width: 99%;
+    height: 55px;
+    padding:5px;
+    margin-top:10px;
+    margin-right:20px;
+}
+
+#end {
+    clear: both;
+}
+
+.iconsplus {
+    display: inline-block; 
+    background: url(pic/plus.png) no-repeat; 
+    overflow: hidden; 
+    text-indent: -9999px; 
+    text-align: left;
+}
+
+.iconsplus { 
+    width: 16px; 
+    height: 16px; 
+}
+
+#center {
+    margin-left: 215px;
+    margin-right: 200px;
+    margin-top: 5px;
+    padding: 10px;
+}
+
+li {
+    list-style-type: none;
+}
+</style>
+</head>
+<body>
+<div id="container">
+	<div id="header"></div>
+	<div id="outer">
+		<div id="inner">
+			<div id="left">
+				<ul>
+					<li><div class= "iconsplus"></div><a href="#">Камень</a></li>
+					<li><div class= "iconsplus"></div><a href="#">Ножницы</a></li>
+					<li><div class= "iconsplus"></div><a href="#">Бумага</a></li>
+				</ul>
+			</div>
+			<div id="right">right</div>
+			<div id="center">center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center</div>
+			<div id="end"></div>
+		</div>
+	</div>
+	<div id="footer"></div>
+</div>
+</body>
+</html>
