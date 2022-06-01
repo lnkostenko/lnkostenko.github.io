@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Использование float при построении колонок</title>
+<style type="text/css">
+#left{
+	background:#ccf;
+	width:200px;
+	float: left;
+	order: 1;
+
+}
+#right{
+	background:#fcc;
+	width:200px;
+	float: right;
+	order: 3;
+}
+#center{
+	background:#cfc;
+	margin-left: 5px;
+	margin-right: 5px;
+	width:600px;
+	order: 2;
+}
+ #container {
+	//display: inline-block;
+	display: flex;
+	flex-direction: row; 
+	justify-content: center; 
+	align-items: flex-start;
+} 
+
+</style>
+</head>
+<body>
+    <div id="container">
+	<div id="left">left<br>left<br>left<br>left<br>left</div>
+	<div id="right">right<br>right<br>right<br>right</div>
+	<div id="center">center text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text</div>
+</body>
+</html>
