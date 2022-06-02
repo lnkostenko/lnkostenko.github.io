@@ -174,7 +174,7 @@ figure figcaption span {
 	color: #29c5e6;
 }
 
-section > figure + figure {
+< section > figure + figure {
 	margin-left: 28px;
 }
 
