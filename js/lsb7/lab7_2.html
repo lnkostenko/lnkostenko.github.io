@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         ::placeholder {
+            color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="text">
+        <label for="lab"></label>
+        <input type="text" data-placeholder="введите что-нибудь" />
+    </div>
+    <script>
+        'use strict';
+        let text = document.getElementById("text");
+
+        let inp = text.getElementsByTagName("input")[0];
+        let label1 = text.getElementsByTagName("label")[0];
+        label1.style.display = "none";
+
+        inp.setAttribute("placeholder", inp.dataset.placeholder);
+        label1.innerHTML = inp.dataset.placeholder;
+
+        inp.addEventListener("focus", function() {
+            label1.style.display = "block";
+            inp.setAttribute("placeholder", "");
+        });
+
+        inp.addEventListener("blur", function() {
+            label1.style.display = "none";
+            inp.setAttribute("placeholder", inp.dataset.placeholder);
+        });
+    </script>
+</body>
+
+</html>

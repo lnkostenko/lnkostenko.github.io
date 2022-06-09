@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lab1.2</title>
+
+    <body>
+        <script>
+            "use strict";
+            let num = prompt('Сколько ворон сидит на ветке?', 0);
+            let num_save = parseInt(num);
+            let a;
+            // if ( num > 5 ) {
+            //     a = 3;
+            // } if else ( num < 5 &&
+            //             num > 1 ) {
+            //     a = 2;
+            // } else {
+            //     a = 1;
+            //}
+            if (num % 10 > 4) {
+                a = 3;
+            }
+            if (num % 10 < 5 && num % 10 > 1) {
+                a = 2;
+            }
+            if (num % 10 == 1) {
+                a = 1;
+            }
+
+            switch (a) {
+                case 1:
+                    alert(`На ветке сидит ${num} ворона`);
+                    break;
+                case 2:
+                    alert(`На ветке сидит ${num} вороны`);
+                    break;
+                case 3:
+                    alert(`На ветке сидит ${num} ворон`);
+                    break;
+                default:
+                    alert(`нет значений`);
+                    break;
+            }
+        </script>
+    </body>
+
+</html>

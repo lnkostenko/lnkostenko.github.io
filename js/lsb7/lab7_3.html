@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <textarea id="area" autofocus></textarea>
+    <div id="view">Text</div>
+
+
+    <script>
+        "use strict";
+        area.hidden = true;
+
+        document.onkeydown = function(e) {
+            if (e.ctrlKey && e.keyCode == '69') {
+                view.hidden = true;
+                area.hidden = false;
+                area.focus()
+                area.innerHTML = view.innerHTML;
+                return false;
+            }
+
+            if (e.ctrlKey && e.keyCode == '83') {
+                view.hidden = false;
+                area.hidden = true;
+                view.innerHTML = area.value;
+                return false;
+            } else if (e.keyCode == '27') {
+                view.hidden = false;
+                area.hidden = true;
+            }
+        };
+    </script>
+
+</body>
+
+</html>
