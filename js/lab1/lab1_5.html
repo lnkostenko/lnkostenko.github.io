@@ -10,17 +10,32 @@
 <body>
 
     <script>
-        "use strict";
-        let n = prompt('Введите число', 0);
-        let d = 'dog ';
-        let c = 'cat ';
-        tabl:
-            for (let i = 0; i <= n; i++) {
-                for (let j = 0; j <= 7; j++) {
-                    if (d == 3) continue tabl;
+       "use strict";
+            let n = prompt("Введите количество строк:");
+            let a = "";
+            let dog = 0;
+            let cat = 0;
+            for (let i = 0; i < n; i++) {
+                let count = 0;
+                while (count < 6) {
+                    if (dog < 3) {
+                        a += "dog ";
+                        dog++;
+                        count++;
+                    }
+                    else if (cat < 2) {
+                        a += "cat ";
+                        cat++;
+                        count++;
+                    }
+                    else {
+                        dog = 0;
+                        cat = 0;
+                    }
                 }
-                console.log(c);
+                a += "\n";
             }
+            console.log(a);
     </script>
 
 </body>
