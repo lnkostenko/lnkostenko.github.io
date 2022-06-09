@@ -5,10 +5,18 @@
  * @returns 
  */
 
+
 function getDecimal(num) {
-
-    return Math.abs(num - (num ^ 0));
-
+    num = String(num);
+    let a = num.slice(num.indexOf("."));
+    if (a == Math.abs(Math.trunc(num) % 10)) {
+        return 0;
+    }
+    let str = 0 + a;
+    if (num < 0) {
+        str = 1 - str;
+    }
+    return str;
 }
 
 /**
