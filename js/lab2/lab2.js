@@ -59,9 +59,9 @@ function factorial(n) {
  * @param {number} f 
  */
 function fib(f) {
-    let a = 1;
-    let b = 1;
-    for (let i = 3; i <= f; i++) {
+    let a = 1n;
+    let b = 1n;
+    for (let i = 3n; i <= f; i++) {
         let c = a + b;
         a = b;
         b = c;
