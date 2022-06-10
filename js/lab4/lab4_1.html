@@ -18,8 +18,8 @@
             pubYear: 2022,
             price: 1200,
             show: function() {
-                alert(`Название: ${book1.title}`);
-                alert(`Цена: ${book1.price}`);
+                alert(`Название: ${this.title}`);
+                alert(`Цена: ${this.price}`);
 
             },
 
@@ -30,8 +30,8 @@
             pubYear: 2017,
             price: 980,
             show: function showBook() {
-                alert(`Название: ${book2.title}`);
-                alert(`Цена: ${book2.price}`);
+                alert(`Название: ${this.title}`);
+                alert(`Цена: ${this.price}`);
             },
         };
 
@@ -56,7 +56,7 @@
         }
 
         book1.show();
-        alert(book2.show());
+        alert(this.show());
     </script>
 </body>
 
