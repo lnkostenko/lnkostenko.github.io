@@ -78,9 +78,9 @@ function camelize(str) {
  */
 
 function fib(n) {
-    let a = 1,
-        b = 0;
-    for (let i = 0; i < n; i++) {
+    let a = 1n,
+        b = 0n;
+    for (let i = 0n; i < n; i++) {
         let temp = a + b;
         a = b;
         b = temp;
