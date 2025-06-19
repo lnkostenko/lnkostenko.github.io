@@ -12,8 +12,9 @@
         <header class="header">
             <div class="header-content">
                 <div class="header-text">
-                    <h1> Name </h1>
-                    <p> Name </p>
+                    <h1> Увлекательная игра🥴 </h1>
+                    <p> Путь к подарку~ </p>
+                    <p> `Земля тебе пухом` </p>
                 </div>
                 <button id="resetBtn" class="reset-btn">
                     <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -139,7 +140,7 @@
             <button class="submit-btn" onclick="checkMagicWord()">Проверить</button>
 
             <div id="result">
-                <img src="images/kiti_for_Anya.png" alt="Волшебная картинка">
+                <img src="images/Derevya_vokrug.png" alt="Волшебная картинка">
                 <br>
                 <button id="downloadBtn" onclick="downloadFile()">Скачать файл</button>
             </div>
@@ -159,8 +160,7 @@
                 function downloadFile() {
                     // Создаём "виртуальный" файл для скачивания
                     const content = "Этот файл был загружен благодаря магии! ✨";
-                    const blob = new Blob([content], { type: "text/plain" });
-                    const url = URL.createObjectURL(blob);
+                    const url = "images/Derevya_vokrug.pdf";
 
                     const a = document.createElement("a");
                     a.href = url;
