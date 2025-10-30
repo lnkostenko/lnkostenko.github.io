@@ -211,7 +211,7 @@ body {
 }
 
 .cell.blocked {
-    background-image: url("images/belkaTT.png");
+    background-image: url("images/belkaTT.jpg");
     background-size: cover;
     border-color: #A6001A;
     cursor: default;
@@ -468,3 +468,4 @@ body {
 .clues-list::-webkit-scrollbar-thumb:hover {
     background: #94a3b8;
 }
+
