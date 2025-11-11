@@ -455,4 +455,5 @@ function resetGame() {
 }
 
 // Initialize the game when the page loads
+
 document.addEventListener('DOMContentLoaded', initGame);
