@@ -11,7 +11,7 @@ const crosswordData = {
             startCol: 7, //С КАКОЙ КОЛОНКИ НАЧИНАЕТСЯ СЛОВО
             length: 10, //ДЛИНА СЛОВА
             answer: 'ПОЦЕЛОВАТЬ', 
-            clue: 'Что должна сделать медсестра с пострадавшим, чтобы вылечить его?',
+            clue: 'Что должна сделать медсестра из Геройской академии с пострадавшим, чтобы вылечить его?',
             cells: []
         },
         {
@@ -511,3 +511,4 @@ function resetGame() {
 
 // Initialize the game when the page loads
 document.addEventListener('DOMContentLoaded', initGame);
+
