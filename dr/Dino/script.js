@@ -107,7 +107,7 @@ const crosswordData = {
             number: 10,
             direction: 'horizontal',
             startRow: 9,
-            startCol: 1,
+            startCol: 2,
             length: 9,
             answer: 'КОППЕЛИОН',
             clue: 'Как назывался проект - последний виток виток биохимической инженерии, после участия в котором люди приобретали полный иммунитет к радиации?',
@@ -468,5 +468,6 @@ function resetGame() {
 // Initialize the game when the page loads
 
 document.addEventListener('DOMContentLoaded', initGame);
+
 
 
