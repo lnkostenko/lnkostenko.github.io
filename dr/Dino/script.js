@@ -74,7 +74,7 @@ const crosswordData = {
             number: 7,
             direction: 'horizontal',
             startRow: 6,
-            startCol: 7,
+            startCol: 7, //changee
             length: 4,
             answer: 'СЕМЬ',
             clue: 'Номер команды Наруто?',
@@ -468,3 +468,4 @@ function resetGame() {
 // Initialize the game when the page loads
 
 document.addEventListener('DOMContentLoaded', initGame);
+
