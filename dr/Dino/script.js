@@ -1,6 +1,6 @@
 // Crossword data
 const crosswordData = {
-    width: 18, //ШИРИНА СЕТКИ
+    width: 19, //ШИРИНА СЕТКИ
     height: 11, //ВЫСОТА СЕТКИ
     words: [ //МАССИВ СЛОВ, МОЖНО ДОБАВИТЬ ПО ШАБЛОНУ
         {
@@ -74,7 +74,7 @@ const crosswordData = {
             number: 7,
             direction: 'horizontal',
             startRow: 6,
-            startCol: 5,
+            startCol: 7,
             length: 4,
             answer: 'СЕМЬ',
             clue: 'Номер команды Наруто?',
@@ -466,4 +466,5 @@ function resetGame() {
 }
 
 // Initialize the game when the page loads
+
 document.addEventListener('DOMContentLoaded', initGame);
