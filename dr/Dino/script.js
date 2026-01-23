@@ -1,6 +1,6 @@
 // Crossword data
 const crosswordData = {
-    width: 19, //ШИРИНА СЕТКИ
+    width: 18, //ШИРИНА СЕТКИ
     height: 11, //ВЫСОТА СЕТКИ
     words: [ //МАССИВ СЛОВ, МОЖНО ДОБАВИТЬ ПО ШАБЛОНУ
         {
@@ -8,7 +8,7 @@ const crosswordData = {
             number: 1, //ПРОСТО НОМЕР
             direction: 'horizontal', // МОЖНО ПОМЕНЯТЬ НА ВЕРТИКАЛЬ
             startRow: 0, // НА АКОЙ СТРОКЕ
-            startCol: 1, //С КАКОЙ КОЛОНКИ НАЧИНАЕТСЯ СЛОВО
+            startCol: 0, //С КАКОЙ КОЛОНКИ НАЧИНАЕТСЯ СЛОВО
             length: 10, //ДЛИНА СЛОВА
             answer: 'ОКЕАНАРИУМ', 
             clue: 'Где работали главные герои «Акватопа белого песка»?',
@@ -19,7 +19,7 @@ const crosswordData = {
             number: 2,
             direction: 'horizontal',
             startRow: 1,
-            startCol: 3,
+            startCol: 2,
             length: 6,
             answer: 'СУМРАК',
             clue: 'Кодовое имя Лойда Форджера?',
@@ -30,7 +30,7 @@ const crosswordData = {
             number: 3,
             direction: 'horizontal',
             startRow: 2,
-            startCol: 5,
+            startCol: 4,
             length: 6,
             answer: 'КОТОРИ',
             clue: 'Чья мать является председателем старшей школы «Отонокизака»? ',
@@ -41,7 +41,7 @@ const crosswordData = {
             number: 4,
             direction: 'horizontal',
             startRow: 3,
-            startCol: 6,
+            startCol: 5,
             length: 5,
             answer: 'КАРТЫ',
             clue: 'С помощью чего Шут из «Огней пестрой арены» предсказывает будущее?',
@@ -52,7 +52,7 @@ const crosswordData = {
             number: 5,
             direction: 'horizontal',
             startRow: 4,
-            startCol: 4,
+            startCol: 3,
             length: 5,
             answer: 'ДИАНА',
             clue: 'Как зовут самую одаренную отличницу и ученицу из «Академии ведьмочек»?',
@@ -63,7 +63,7 @@ const crosswordData = {
             number: 6,
             direction: 'horizontal',
             startRow: 5,
-            startCol: 3,
+            startCol: 2,
             length: 5,
             answer: 'ЖРИЦА',
             clue: 'Аниме «Убийца гоблинов» начинается с того что юная блондиночка вступает в гильдию авантюристов, какова её роль в отряде?',
@@ -74,7 +74,7 @@ const crosswordData = {
             number: 7,
             direction: 'horizontal',
             startRow: 6,
-            startCol: 7, //changee
+            startCol: 6, //changee
             length: 4,
             answer: 'СЕМЬ',
             clue: 'Номер команды Наруто?',
@@ -85,7 +85,7 @@ const crosswordData = {
             number: 8,
             direction: 'horizontal',
             startRow: 7,
-            startCol: 3,
+            startCol: 2,
             length: 8,
             answer: 'ПРИМАНКА',
             clue: 'Прозвище Хинаты Шое из аниме «Волейбол»?',
@@ -96,7 +96,7 @@ const crosswordData = {
             number: 9,
             direction: 'horizontal',
             startRow: 8,
-            startCol: 2,
+            startCol: 1,
             length: 7,
             answer: 'ШАХМАТЫ',
             clue: 'Во что Широ из аниме «Нет игры - нет жизни» регулярно выигрывала у программы?',
@@ -107,7 +107,7 @@ const crosswordData = {
             number: 10,
             direction: 'horizontal',
             startRow: 9,
-            startCol: 1, //changee
+            startCol: 0, //changee
             length: 9,
             answer: 'КОППЕЛИОН',
             clue: 'Как назывался проект - последний виток виток биохимической инженерии, после участия в котором люди приобретали полный иммунитет к радиации?',
@@ -118,7 +118,7 @@ const crosswordData = {
             number: 11,
             direction: 'horizontal',
             startRow: 10,
-            startCol: 5,
+            startCol: 4,
             length: 14,
             answer: 'ЭКСГИБИЦИОНИЗМ',
             clue: 'Какая особенность Грея Фуллбастера из «Хвоста Феи» отпугивает людей?',
@@ -468,6 +468,7 @@ function resetGame() {
 // Initialize the game when the page loads
 
 document.addEventListener('DOMContentLoaded', initGame);
+
 
 
 
